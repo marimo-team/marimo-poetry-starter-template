@@ -1,0 +1,36 @@
+[tool.poetry]
+authors = ["Your Name <your.email@example.com>"]
+description = "A starter template for marimo notebooks with Poetry"
+name = "marimo-template"
+packages = [{include = "src"}]
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+marimo = "^0.10.12"
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+pytest = "^8.0.0"
+ruff = "^0.1.13"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests", "src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+  "E", # pycodestyle
+  "F", # pyflakes
+  "I", # isort
+  "B", # flake8-bugbear
+]
