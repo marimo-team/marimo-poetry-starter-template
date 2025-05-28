@@ -44,4 +44,4 @@ autosave_delay = 1000
 format_on_save = true
 
 [tool.marimo.package_management]
-manager = "uv"
+manager = "poetry"
