@@ -7,7 +7,7 @@ readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-marimo = "^0.10.12"
+marimo = "^0.22.0"
 python = "^3.12"
 
 [tool.poetry.group.dev.dependencies]
